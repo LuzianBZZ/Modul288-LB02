@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LB02 Lenny und Luzian</title>
+    <link rel="stylesheet" type="text/css" href="waehrungsrechner.css">
+    <link rel="shortcut icon" type="image/x-icon" href="dollarsign.webp">
+  </head>
+  <body>
+    <div id="content">
+      <h1>Währungsrechner</h1>
+      <h5>von Lenny und Luzian</h5>
+      <form>
+        <div class="auswahl">
+          <label style="margin-right: 2%;">Betrag:</label>
+          <input type="text" id="amount" placeholder="Betrag eingeben">
+          <br>
+          <label style="margin: 2%;">Von:</label>
+          <select id="from">
+            <option value="USD">US-Dollar</option>
+            <option value="CHF">Schweizer Franken</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">Great British Pound</option>
+            <option value="AED">VAE-Dirham</option>
+            <option value="AOA">Kwanza</option>
+            <option value="COP">Kolumbianischer Peso</option>
+          </select>
+          <br>
+          <label style="margin: 2%;">Zu:</label>
+          <select id="to">
+            <option value="USD">US-Dollar</option>
+            <option value="CHF">Schweizer Franken</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">Great British Pound</option>
+            <option value="AED">VAE-Dirham</option>
+            <option value="AOA">Kwanza</option>
+            <option value="COP">Kolumbianischer Peso</option>
+          </select>
+        </div>
+        <br>
+        <button type="button" onclick="convertCurrency()">Umrechnen</button>
+      </form>
+      <br>
+      <p id="result"></p>
+    </div>
+    <script src="funktionen.js"></script>
+  </body>
+</html>
